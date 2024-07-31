@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+<body>
+	<h2>There are 3 types of lists:</h2>
+	<dl>
+		<dt>definition lists</dt>
+		<dd>which show terms and definition</dd>
+		<dt>unordered lists</dt>
+		<dd>which show bullets</dd>
+		<dt>ordered list</dt>
+		<dd>which show number of letters</dd>
+	</dl>
+	<p>Above is an example of a definition list</p>
+	<p>
+		Unordered lists can have a type attribute which can be applied to the ul or the li tag.
+		The three values allowed are:
+	</p>
+	<ul style="list-style-type: square;">
+		<li>type="square"</li>
+	</ul>
+	<ul style="list-style-type: disc;">
+		<li>type="disc"</li>
+	</ul>
+	<ul style="list-style-type: circle;">
+		<li>type="circle"</li>
+	</ul>
+	<p>
+		Ordered lists can have a type attribute too.
+		Used along with a start attribute they can show
+	</p>
+	<ol type="a" start="1">
+		<li>lower case letters</li>
+	</ol>
+	<ol type="A" start="2">
+		<li>upper case letters</li>
+	</ol>
+	<ol type="i" start="3">
+		<li>lower case roman numerals</li>
+	</ol>
+	<ol type="I" start="4">
+		<li>upper case roman numerals</li>
+	</ol>
+	<ol type="1" start="5">
+		<li>numbers</li>
+	</ol>
+	<h2>The Great American Novel</h2>
+	<ol type="I">
+		<li>Introduction</li>
+		<ol type="A">
+			<li>Boy's childhood</li>
+			<li>Girl's childhood</li>
+		</ol>
+		<li>Development</li>
+		<ol type="A">
+			<li>Boy meets Girl</li>
+			<li>Boy and Girl fall in love</li>
+			<li>Boy and Girl have flight</li>
+		</ol>
+		<li>Climax</li>
+		<ol type="A">
+			<li>Boy gives Girl ultimatum</li>
+			<ol type="1">
+				<li>Girl can't believe her ears</li>
+				<li>Boys is indignant at Girl's indigance</li>
+			</ol>
+			<li>Girl tells Boy to get lost</li>
+		</ol> 
+		<li>Denouenment</li>
+		<li>Epilogue</li>
+	</ol>
+</body>
+</html>
