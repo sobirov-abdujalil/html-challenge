@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <style>
+        form {
+            background-color: rgb(187,204,255);
+            padding: 10px;
+        }
+        #fieldset-container {
+            border: 1px solid rgb(153,170,255);
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <fieldset id="fieldset-container">
+            <fieldset>
+                <legend>Purchases</legend><br>
+                <label for="product-name">Product Name:</label><br>
+                <select name="product-name" id="product-name">
+                    <option value="first"></option>
+                    <option value="second">Second value</option>
+                    <option value="last">Last value</option>
+                </select>
+                <br>
+                <label for="quantity">Quantity:</label><br>
+                <input type="text" name="quantity" id="quantity">
+            </fieldset>
+            <fieldset>
+                <legend>Personal details</legend><br>
+                <label for="fname">First Name:</label><br>
+                <input type="text" name="fname" id="fname"><br>
+                <label for="lname">Last Name:</label><br>
+                <input type="text" name="lname" id="lname"><br>
+            </fieldset>
+            <fieldset>
+                <legend>Credit Card Details</legend><br>
+                <label for="credit-card-type">Credit Card Type</label><br>
+                <input type="radio" id="credit-card-type" name="credit-card-type" value="visa">Visa <br>
+                <input type="radio" id="credit-card-type" name="credit-card-type" value="mastercard">Mastercard <br>
+                <label for="credit-card-number">Credit Card Number:</label><br>
+                <input type="number" name="credit-card-number" id="credit-card-number"><br>
+                <label for="edate">Expiry Date:</label><br>
+                <input type="text" name="edate" id="edate"><br>
+            </fieldset>
+            <fieldset>
+                <legend>Billing Information</legend>
+                <label for="postal-address">Postal Address:</label><br>
+                <textarea name="postal-address" id="postal-address" cols="40" rows="5"></textarea><br>
+                <label for="home-address">Home Address:</label>
+                <input type="checkbox" name="same" id="same" value="same">
+                <label for="same">Same as above</label><br>
+                <textarea name="home-address" id="home-address" cols="40" rows="5"></textarea><br>
+            </fieldset> <br>
+            <input type="submit" value="Place my order" name="submit">
+        </fieldset>
+    </form>
+</body>
+</html>
